@@ -21,9 +21,20 @@
         ctx.lineTo(300, 100); //终点坐标
         ctx.stroke(); //绘制线段
 
-        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.lineWidth = 1;
         ctx.strokeStyle = 'green';
         ctx.fillStyle = 'red';
+        ctx.arc(200, 200, 50, 0, 2 * Math.PI); //绘制圆形
+        ctx.stroke();
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.lineWidth = 1; //线条宽度
+        ctx.strokeStyle = 'red'; //线条填充色
+        ctx.moveTo(300, 300); //起点坐标
+        ctx.lineTo(301, 301); //中间点坐标
+        ctx.stroke(); //绘制线段
     </script>
 </body>
 
